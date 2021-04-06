@@ -1,0 +1,30 @@
+Examples:
+
+- http://zachstronaut.github.io/quintessential-css-cube/
+Github with css framework
+
+- http://www.flashmonkey.co.uk/css-3d-cube-tutorial/
+simple example of cube. Interesting site of web developer
+
+- https://medium.com/@josephwong2004/how-to-do-rotating-cube-with-mouse-tracking-in-css-a2366b69fd73
+tutorial how to do 3d cube. Has tips on creating smooth animation
+
+- https://codepen.io/jorgecardoso/pen/qbRzRm
+codepen with working example
+
+- https://css-tricks.com/how-css-perspective-works/
+- https://codepen.io/amit_sheen/pen/bb97668b177477d5db88a46a0888e6e7
+codepen with building 3d
+
+.container {
+    position: relative;
+    width: 420px; height: 420px;
+    border: 1px #fff solid;
+    border-radius: 4px;
+    perspective: 1420px;
+    perspective-origin: 0% -25%;
+    transform-style: preserve-3d;
+}
+
+- https://css-tricks.com/simplifying-css-cubes-custom-properties/
+using gulp

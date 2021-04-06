@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <link href="cube.css" rel="stylesheet" type="text/css" />
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                
+/*                border: 1px solid black;*/
+                
+            }
+            
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .wrapper {
+                width: 60%;
+                margin: auto;
+            }
+            
+            .scene-container {
+                height: 50vh;
+                width: 100%;    
+                 perspective: 3500px; 
+                 transform-style: preserve-3d;
+            }
+            
+            #scene {
+                height: 100%;
+                position: relative;
+                transform-style: preserve-3d;
+            }
+            
+            .cube-container {
+                width: 10vh;
+                height: 10vh;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transform-style: preserve-3d;
+
+                bottom: 5vh;
+            }
+            .pc-main-case {
+                transform: scaleX(4) scaleY(1) scaleZ(2);
+            }
+            .pc-support-case {
+                transform: scaleX(1) scaleY(0.5) scaleZ(1.5) translateX(26vh) translateY(5vh);
+            }
+            
+            .pc-screen {
+                bottom: 21vh;
+                transform: scaleX(3.5) scaleY(2) scaleZ(2);
+            }
+            .pc-keybord {
+                transform: scaleX(4) scaleY(0.5) scaleZ(2) translateZ(11vh) translateY(5vh);
+            }
+            
+            .cube-shadow {
+                 transform: scaleX(7) scaleY(1) scaleZ(7) translateZ(5vh);
+            }
+            
+            .cube {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+
+            }
+            .cube-container figure {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                 transform-style: preserve-3d;
+/*                 -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);*/
+
+            }
+            .front {
+                background-color: rgba(0, 128, 0, 0.6);
+            }
+            .back {
+                background-color: rgba(0, 128, 0, 0.6);
+                transform: translateZ(-10vh);
+            }
+            .right {
+                background-color: rgba(153, 51, 94, 0.5);
+                transform-origin: top left;
+                transform: rotateY(90deg) translateZ(10vh);
+            }
+            .top {
+                background-color: rgba(211, 245, 135, 0.76);
+                transform-origin: top left;
+                transform: rotateX(-90deg);
+            }
+            .left {
+                background-color: rgba(102, 51, 153, 0.5);
+                transform-origin: top left;
+                transform: rotateY(-90deg) translateX(-10vh);
+            }
+            .bottom {
+                background-color: rgba(211, 245, 135, 0.76);
+                transform-origin: top left;
+                transform: rotateX(-90deg) translateZ(10vh);
+            }
+
+        </style>
+        
+       
+    </head>
+    <body>
+<div class="wrapper">
+  
+   <section class="scene-container">
+        <div id="scene">
+        
+          
+           <div class="cube-container pc-main-case">
+                <div class="cube">
+                    <figure class="front">
+            <!--			<img src="http://lorempixel.com/196/196/sports/1">-->
+                    </figure>
+                    <figure class="back">
+            <!--			<img src="http://lorempixel.com/196/196/sports/2">-->
+                    </figure>
+                    <figure class="right">
+            <!--			<img src="http://lorempixel.com/196/196/sports/3">-->
+                    </figure>
+                    <figure class="left">
+            <!--			<img src="http://lorempixel.com/196/196/sports/7">-->
+                    </figure>
+                    <figure class="top">
+            <!--			<img src="http://lorempixel.com/196/196/sports/5">-->
+                    </figure>
+                    <figure class="bottom">
+            <!--			<img src="http://lorempixel.com/196/196/sports/6">-->
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="cube-container pc-screen">
+                <div class="cube">
+                    <figure class="front">
+            <!--			<img src="http://lorempixel.com/196/196/sports/1">-->
+                    </figure>
+                    <figure class="back">
+            <!--			<img src="http://lorempixel.com/196/196/sports/2">-->
+                    </figure>
+                    <figure class="right">
+            <!--			<img src="http://lorempixel.com/196/196/sports/3">-->
+                    </figure>
+                    <figure class="left">
+            <!--			<img src="http://lorempixel.com/196/196/sports/7">-->
+                    </figure>
+                    <figure class="top">
+            <!--			<img src="http://lorempixel.com/196/196/sports/5">-->
+                    </figure>
+                    <figure class="bottom">
+            <!--			<img src="http://lorempixel.com/196/196/sports/6">-->
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="cube-container pc-keybord">
+                <div class="cube">
+                    <figure class="front">
+            <!--			<img src="http://lorempixel.com/196/196/sports/1">-->
+                    </figure>
+                    <figure class="back">
+            <!--			<img src="http://lorempixel.com/196/196/sports/2">-->
+                    </figure>
+                    <figure class="right">
+            <!--			<img src="http://lorempixel.com/196/196/sports/3">-->
+                    </figure>
+                    <figure class="left">
+            <!--			<img src="http://lorempixel.com/196/196/sports/7">-->
+                    </figure>
+                    <figure class="top">
+            <!--			<img src="http://lorempixel.com/196/196/sports/5">-->
+                    </figure>
+                    <figure class="bottom">
+            <!--			<img src="http://lorempixel.com/196/196/sports/6">-->
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="cube-container pc-support-case">
+                <div class="cube">
+                    <figure class="front">
+            <!--			<img src="http://lorempixel.com/196/196/sports/1">-->
+                    </figure>
+                    <figure class="back">
+            <!--			<img src="http://lorempixel.com/196/196/sports/2">-->
+                    </figure>
+                    <figure class="right">
+            <!--			<img src="http://lorempixel.com/196/196/sports/3">-->
+                    </figure>
+                    <figure class="left">
+            <!--			<img src="http://lorempixel.com/196/196/sports/7">-->
+                    </figure>
+                    <figure class="top">
+            <!--			<img src="http://lorempixel.com/196/196/sports/5">-->
+                    </figure>
+                    <figure class="bottom">
+            <!--			<img src="http://lorempixel.com/196/196/sports/6">-->
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="cube-container cube-shadow">
+                   <div class="cube">
+                    <figure class="bottom">
+            <!--			<img src="http://lorempixel.com/196/196/sports/6">-->
+                    </figure>
+                </div>
+            </div>
+            
+        </div>
+    </section> 
+
+</div>
+   
+    </body>
+    
+   
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script>
+    
+    
+     
+    
+var lastMouseX = 0,
+	lastMouseY = 0;
+var rotX = 0,
+	rotY = 0;
+
+var lastMouseX = 0,
+	lastMouseY = 0;
+var rotX = 0,
+	rotY = 0;
+
+$(document).on("mousedown", function(ev) {
+	lastMouseX = ev.clientX;
+	lastMouseY = ev.clientY;
+	$(document).on("mousemove", mouseMoved);
+});
+$(document).on("mouseup", function() {
+	$(document).off("mousemove", mouseMoved);
+});
+
+function mouseMoved(ev) {
+	var deltaX = ev.pageX - lastMouseX;
+	var deltaY = ev.pageY - lastMouseY;
+
+	lastMouseX = ev.pageX;
+	lastMouseY = ev.pageY;
+
+	rotY -= deltaX * 0.1;
+	rotX += deltaY * 0.1;
+
+	$("#scene").css("transform", "rotateX( " + rotX + "deg) rotateY(" + rotY + "deg)");
+} 
+    
+    $(".top").click(function(e){
+                    console.log(e);
+                    })
+    
+    
+    </script>
+
+</html>
